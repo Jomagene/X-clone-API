@@ -1,0 +1,19 @@
+{
+  "name": "x-clone-api",
+  "version": "1.0.0",
+  "description": "Créer une API simulée par une application back-end faite avec Express.js pour le projet X-clone",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jomagene",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "nodemon": "^3.1.0"
+  }
+}
