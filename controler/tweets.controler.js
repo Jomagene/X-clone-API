@@ -1,4 +1,4 @@
-import data from "../data";
+import data from "../data.js";
 
 function readTweet(req, res) {
   try {
@@ -10,7 +10,8 @@ function readTweet(req, res) {
 
 function createTweet(req, res) {
   try {
-    res.status(200).json(data);
+    data.tweets.push(req.body);
+    res.status(201).json({ message: "Data saved succefully" });
   } catch (error) {
     res.status(500).json({ message: error.message });
   }
