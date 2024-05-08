@@ -2,7 +2,7 @@ import data from "../data.js";
 
 function readUserTweets(req, res) {
   try {
-    const userName = req.params;
+    const { userName } = req.params;
     const userTweets = data.tweets.filter(
       (tweet) => tweet.User.titleAuthor == userName
     );
