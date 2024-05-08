@@ -1,6 +1,8 @@
 import express from "express";
 import dotenv from "dotenv";
-import data from "./data.js";
+import userRoute from "./routes/user.route.js";
+import usersRoute from "./routes/users.route.js";
+import tweetsRoute from "./routes/tweets.route.js";
 
 dotenv.config();
 
@@ -9,8 +11,8 @@ const { PORT } = process.env;
 
 server.use(express.json());
 
-server.use("/tweets");
-server.use("/users");
-server.use("/user");
+server.use("/tweets", tweetsRoute);
+server.use("/users", usersRoute);
+server.use("/user", userRoute);
 
 server.listen(PORT);
