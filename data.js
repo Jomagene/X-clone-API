@@ -1,8 +1,8 @@
 const data = {
   currentUser: {
     titleAuthor: "Bradley Ortiz",
-    titleAuthor2: "@bradley_",
-    tweet_avatar: "/images/Profile-Photo.png",
+    reference: "@bradley_",
+    avatar: "/images/Profile-Photo.png",
     followers: "234k",
     following: "4k",
     date: "mars 2022",
@@ -10,7 +10,14 @@ const data = {
   tweets: [
     {
       id: 0,
-      avatar: "/images/CNN-pic.png",
+      User: {
+        titleAuthor: "CNN",
+        reference: "@CNN",
+        avatar: "/images/CNN-pic.png",
+        followers: "234k",
+        following: "4k",
+        date: "mars 2022",
+      },
       content: {
         body: {
           title: {
@@ -46,7 +53,14 @@ const data = {
     },
     {
       id: 1,
-      avatar: "/images/NewYorkTimes-pic.png",
+      User: {
+        titleAuthor: "The New York Times",
+        reference: "@nytimes",
+        avatar: "/images/NewYorkTimes-pic.png",
+        followers: "2M",
+        following: "4k",
+        date: "mars 2022",
+      },
       content: {
         body: {
           title: {
@@ -82,7 +96,14 @@ const data = {
     },
     {
       id: 2,
-      avatar: "/images/Tweeter-pic.png",
+      User: {
+        titleAuthor: "Twitter",
+        reference: "@Twitter",
+        avatar: "/images/Tweeter-pic.png",
+        followers: "20M",
+        following: "40",
+        date: "mars 2022",
+      },
       content: {
         body: {
           title: {
@@ -118,7 +139,14 @@ const data = {
     },
     {
       id: 3,
-      avatar: "/images/Tweeter-pic.png",
+      User: {
+        titleAuthor: "Twitter",
+        reference: "@Twitter",
+        avatar: "/images/Tweeter-pic.png",
+        followers: "20M",
+        following: "40",
+        date: "mars 2022",
+      },
       content: {
         body: {
           title: {
@@ -154,7 +182,14 @@ const data = {
     },
     {
       id: 4,
-      avatar: "/images/Tweeter-pic.png",
+      User: {
+        titleAuthor: "Twitter",
+        reference: "@Twitter",
+        avatar: "/images/Tweeter-pic.png",
+        followers: "20M",
+        following: "40",
+        date: "mars 2022",
+      },
       content: {
         body: {
           title: {
